@@ -13,10 +13,10 @@ function calcularOuroAlto() {
   let segundaSaida = "";
   let comissao = 0;
 
-  if (V < 200) {
+  if (V <= 200) {
     comissao = gramas * 12;
     segundaSaida = "Comissão: " + comissao.toFixed(2);
-  } else if (V >= 200 && V < 300) {
+  } else if (V > 200 && V < 300) {
     segundaSaida = "Esse colaborador não bateu a meta";
   }
 
@@ -37,10 +37,10 @@ function calcularOuroBaixo() {
   let segundaSaida = "";
   let comissao = 0;
 
-  if (ValorPorGrama < 130) {
+  if (ValorPorGrama <= 130) {
     comissao = gramas * 12;
     segundaSaida = "Comissão: " + comissao.toFixed(2);
-  } else if (ValorPorGrama >= 130) {
+  } else if (ValorPorGrama > 130) {
     segundaSaida = "Esse colaborador não bateu a meta";
   }
 
@@ -75,3 +75,4 @@ function mostrarTotal() {
   let resultadoDiv = document.getElementById('resultadoTotal');
   resultadoDiv.textContent = "💰 Total de Comissões: " + totalComissoes.toFixed(2);
 }
+
