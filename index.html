@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Comissões - Ouro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Calculadora de Comissões - Ouro</h1>
+
+  <div class="container">
+    <h2>Ouro Alto</h2>
+    <label>Quantidade de gramas:</label>
+    <input type="number" id="gramasAlto" placeholder="Digite a quantidade">
+
+    <label>Valor pago:</label>
+    <input type="number" id="valorAlto" placeholder="Digite o valor pago">
+
+    <button onclick="calcularOuroAlto()">Calcular Ouro Alto</button>
+    <div class="resultado" id="resultadoAlto"></div>
+  </div>
+
+  <div class="container">
+    <h2>Ouro Baixo</h2>
+    <label>Quantidade de gramas:</label>
+    <input type="number" id="gramasBaixo" placeholder="Digite a quantidade">
+
+    <label>Valor pago:</label>
+    <input type="number" id="valorBaixo" placeholder="Digite o valor pago">
+
+    <button onclick="calcularOuroBaixo()">Calcular Ouro Baixo</button>
+    <div class="resultado" id="resultadoBaixo"></div>
+  </div>
+
+  <div class="container">
+    <h2>Compras Altas</h2>
+    <label>Quantidade de gramas:</label>
+    <input type="number" id="gramasCompras" placeholder="Digite a quantidade">
+
+    <label>Valor pago:</label>
+    <input type="number" id="valorCompras" placeholder="Digite o valor pago">
+
+    <button onclick="calcularComprasAltas()">Calcular Compras Altas</button>
+    <div class="resultado" id="resultadoCompras"></div>
+  </div>
+
+  <!-- 🔹 Total de Comissões -->
+  <div class="container">
+    <h2>Total de Comissões</h2>
+    <button onclick="mostrarTotal()">Calcular Total</button>
+    <div class="resultado" id="resultadoTotal"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
